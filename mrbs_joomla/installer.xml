@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/component-install.dtd">
+<install version="1.5" type="component" method="upgrade">
+	<name>Joomla - MRBS bridge</name>
+	<description><![CDATA[
+<div style="color:red; margin: 15%; width: 400px; border: solid 2px red;"><br/>This bridge can NOT be installed by using the installer from joomla.<br /><br />
+<h2 style="color:red;">HOW TO INSTALL:</h2>
+Unzip the file.<br />
+Open the file README<br /><br /><br /></description></div>
+]]></description>
+	<version>x</version>
+	<creationDate>x</creationDate>
+	<author>Joomla - MRBS bridge (Schneider Webdesign)</author>
+	<authorEmail>info@schneiderwebdesign.nl</authorEmail>
+	<authorUrl>http://www.schneiderwebdesign.nl</authorUrl>
+	<copyright>Copyright © ____ All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+</install>

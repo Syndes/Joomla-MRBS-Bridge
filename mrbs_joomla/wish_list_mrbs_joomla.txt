@@ -1,0 +1,13 @@
+Support-Requests - Schneider Webdesign
+--------------------------------------------------
+- Get Joomla user additional fields - !!! not working !!!
+- Installation with the Joomla installation manager.
+- Joomla errors
+
+
+Support-Requests - users
+--------------------------------------------------
+kris - auto switch on user_profile plugin Joomla
+	SELECT *  FROM `z78iz_extensions` WHERE `name` LIKE '%user_profile%'
+	UPDATE  `mrbsjmb`.`z78iz_extensions` SET  `enabled` =  '1' WHERE  `z78iz_extensions`.`extension_id` =433
+
