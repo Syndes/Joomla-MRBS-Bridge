@@ -37,27 +37,33 @@ Off course Joomla must also work properly first!
 NOTE: This bridge can NOT be installed by using the installer from joomla, use FTP
 
 1) Install Joomla - test if Joomla is working correctly
+
 2) Enable the “User Profile” plugin in Joomla
-3) Install MRBS - test if MRBS is working correctly
-	It must be a subfolder of your Joomla installation.
+
+3) Install MRBS - test if MRBS is working correctly It must be a subfolder of your Joomla installation.
+
 4) Is Joomla still working?
+
 5) Try to make a booking in MRBS.
+
 6) upload files from FTP_UPLOAD to the MRBS folder (merge and override current files)
-7) When you are using SMTP email in Joomla then the MRBS mail will also working.
-   When you want to use a different mail-setup please read the MRBS manual.
+
+7) When you are using SMTP email in Joomla then the MRBS mail will also working. When you want to use a different mail-setup please read the MRBS manual.
 
 8) Changing the line $vocab["norights"] in your own language file
+
    find:
-	$vocab["norights"] = "You do not have the necessary rights to view this page.";
+   > $vocab["norights"] = "You do not have the necessary rights to view this page.";
 
    change to:
-   $vocab["norights"] = "
-	You are not authorized to modify this entry.
-	<p class='login_reg'>
-	<a class='login' href='../index.php?option=com_users&amp;view=login' TARGET='_parent' id='btnLogin'>Login</a> or
-	<a class='registration' href='../index.php?option=com_users&amp;view=registration' TARGET='_parent' >Register</a>
-	</p>
-	";
+   
+   > $vocab["norights"] = "
+   > You are not authorized to modify this entry.
+   > <p class='login_reg'>
+   > <a class='login' href='../index.php?option=com_users&amp;view=login' TARGET='_parent' id='btnLogin'>Login</a> or
+   > <a class='registration' href='../index.php?option=com_users&amp;view=registration' TARGET='_parent' >Register</a>
+   > </p>
+   > ";
 
 9) Email settings must done in Joomla Global Configuration
 	for example with Gmail use:
