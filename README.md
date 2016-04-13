@@ -1,4 +1,5 @@
 # Joomla-MRBS-Bridge
+
 Bridge between Joomla and MRBS
 
 
@@ -6,14 +7,18 @@ Minimum Required
 -------------------------
 
 Joomla 3.4.6
+
 MRBS 1.5.x
+
 mrbs_joomla_v1.5.1
+
 PHP version 5.4.x
 
 
 End of Support
 -------------------------
 Joomla 2.5.x
+
 PHP version 5.3.x
 
 
@@ -73,20 +78,19 @@ NOTE: This bridge can NOT be installed by using the installer from joomla, use F
 
 
 
-
-
 ## Common errors
+-------------------------
+Notice: Undefined property: JObject::$profile in ../joomla.php on line 69
+Did you switch on the user profile plugin?
 
-> Notice: Undefined property: JObject::$profile in ../joomla.php on line 69
->	Did you switch on the user profile plugin?
+Warning: Save failed with the following error: A first level menu item alias can't be 'mrbs' because 'mrbs' is a sub-folder of your joomla installation folder.
+To add a menu in Joomla with the same alias as the subfolder can give an error.
+Use a different name for the menu item or change the folder name for MRBS. 
 
-> Warning: Save failed with the following error: A first level menu item alias can't be 'mrbs' because 'mrbs' is a sub-folder of your joomla installation folder.
->	To add a menu in Joomla with the same alias as the subfolder can give an error.
->	Use a different name for the menu item or change the folder name for MRBS. 
+Fatal error: unfortunately the database is not available at the moment.
+When this happens after uploading the bridge files you did it wrong, please do not override subfolders you must merge them.
+Did you install the MRBS database in the same database as Joomla? Please install MRBS in the same database.
 
-> Fatal error: unfortunately the database is not available at the moment.
->	When this happens after uploading the bridge files you did it wrong, please do not override subfolders you must merge them.
->	Did you install the MRBS database in the same database as Joomla? Please install MRBS in the same database.
+Warning: Server failed to set locale to ‘xx_XX.UTF-8']
+Search for override_locale settings to solve the problem
 
-> Warning: Server failed to set locale to ‘xx_XX.UTF-8']
->	Search for override_locale settings to solve the problem
