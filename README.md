@@ -25,17 +25,17 @@ PHP version 5.3.x
 Installation
 -------------------------
 
-Upload MRBS
-Please read the INSTALL file from MRBS (http://mrbs.sourceforge.net/docs.php)
-When MRBS is working, follow our installation guide “readme.txt”.
-Off course Joomla must also work properly first!
+- Upload MRBS
+- Please read the INSTALL file from MRBS (http://mrbs.sourceforge.net/docs.php)
+- When MRBS is working, follow our installation guide “readme.txt”.
+- Off course Joomla must also work properly first!
 
 
 
-INSTALLATION BRIDGE
+Installation bridge
 -------------------------
 
-NOTE: This bridge can NOT be installed by using the installer from joomla, use FTP
+* NOTE: This bridge can NOT be installed by using the installer from joomla, use FTP *
 
 1) Install Joomla - test if Joomla is working correctly
 
