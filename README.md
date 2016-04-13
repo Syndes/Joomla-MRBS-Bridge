@@ -35,7 +35,7 @@ Installation
 Installation bridge
 -------------------------
 
-* NOTE: This bridge can NOT be installed by using the installer from joomla, use FTP *
+**NOTE: This bridge can NOT be installed by using the installer from joomla, use FTP**
 
 1) Install Joomla - test if Joomla is working correctly
 
