@@ -12,23 +12,6 @@
 
 
 
-Minimum Required
--------------------------
-
-Joomla 3.4.6
-MRBS 1.5.x
-mrbs_joomla_v1.5.1
-PHP version 5.4.x
-
-
-End of Support
--------------------------
-Joomla 2.5.x
-PHP version 5.3.x
-
-
-Installation
--------------------------
-See REAMDE https://github.com/Syndes/Joomla-MRBS-Bridge
+More info see  https://github.com/Syndes/Joomla-MRBS-Bridge
 
 
