@@ -1,7 +1,8 @@
 # Joomla-MRBS-Bridge
 
 Bridge between Joomla and MRBS
-
+'MRBS - http://mrbs.sourceforge.net
+'Joomla - http://www.joomla.org
 
 Minimum Required
 -------------------------
