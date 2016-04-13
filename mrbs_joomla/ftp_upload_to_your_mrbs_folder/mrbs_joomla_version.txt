@@ -1,0 +1,65 @@
+Schneider Webdesign
+-------------------------
+2016-03-20 00:00:00 - v1.5.1
+- add some help text to the readme.txt
+- some more checks for a beter function of the script
+- successful test with Joomla 3.4.8. and MRBS 1.5.0
+- also successful tests on PHP 5.6.x
+
+—————version-history———————————————————————————————————————————————————————————————
+
+2015-12-17 00:00:00 - v1.5.0
+- test successful with Joomla 3.4.6 and MRBS 1.5.0
+2014-09-03 00:00:00 - v4.1.1-trunk
+- updated files for the next version
+- until now use the trunk version of MRBS
+- removed functions_mail.inc from installing, no needed any more
+- several updates in auth_jm.inc
+- several updates in config.inc
+- end of support Joomla 3.3.x
+- end of support PHP 5.4.x
+- end of support mrs 1.4.11
+2014-09-03 00:00:00 - v3.5.0
+- for joomla 2.5 and mrbs 1.4.11
+- no updates
+2014-09-03 00:00:00 - v3.4.8
+- Bug fix for Strict standards
+- end of support php 5.3
+- end of support Joomla 2.5
+2014-09-03 00:00:00 - v3.4.7
+- removed the Joomla check
+2014-09-03 00:00:00 - v3.4.6
+- major bug in group levels (thanks Kris and Andreas)
+2014-07-23 00:00:00 - v3.4.5
+- again some small bug fixes
+2014-07-23 00:00:00 - v3.4.4
+- small bug fix
+2014-07-23 00:00:00 - v3.4.3
+- update for mrbs-1.4.11
+2014-05-22 00:00:00 - v3.4.2 - Trunk
+- Joomla XML installation fix
+2014-05-14 00:00:00 - v3.4.1 - Trunk
+- Joomla and MRBS version check
+- Bug fix for Cannot redeclare utf8_substr()
+- Checked if its working with Joomla 3.x. Only posible when using the Trunk version 2837
+2013-12-16 10:00:00 - v3.4-beta
+- smtp settings
+2013-08-12 19:00:00 - v3.4-beta
+- Extra file "config.inc.overrides.php". Easy when there is a script update
+2013-08-12 19:00:00 - v3.3.1
+- Language update
+2013-08-12 19:00:00 - v3.3
+- Access level option in config.inc.php
+- several updates in functions_mail.inc
+2013-07-01 19:00:00 - v3.2
+- installation manual
+- joomla installation alart
+2013-06-10 19:00:00 - v3.1
+- fine tuning script
+- get all the needs out of the Joomla config
+2013-03-24 19:00:00 - v3.1
+- authentication by group or access level in joomla
+2013-03-11 19:00:00 - v2.0
+- session bridge
+2013-03-11 23:00:00 - v2.1
+- email bug
