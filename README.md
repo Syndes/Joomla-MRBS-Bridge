@@ -37,21 +37,14 @@ Installation bridge
 
 **NOTE: This bridge can NOT be installed by using the installer from joomla, use FTP**
 
-1) Install Joomla - test if Joomla is working correctly
-
-2) Enable the “User Profile” plugin in Joomla
-
-3) Install MRBS - test if MRBS is working correctly It must be a subfolder of your Joomla installation.
-
-4) Is Joomla still working?
-
-5) Try to make a booking in MRBS.
-
-6) upload files from FTP_UPLOAD to the MRBS folder (merge and override current files)
-
-7) When you are using SMTP email in Joomla then the MRBS mail will also working. When you want to use a different mail-setup please read the MRBS manual.
-
-8) Changing the line $vocab["norights"] in your own language file
+- Install Joomla - test if Joomla is working correctly
+- Enable the “User Profile” plugin in Joomla
+- Install MRBS - test if MRBS is working correctly It must be a subfolder of your Joomla installation.
+- Is Joomla still working?
+- Try to make a booking in MRBS.
+- upload files from FTP_UPLOAD to the MRBS folder (merge and override current files)
+- When you are using SMTP email in Joomla then the MRBS mail will also working. When you want to use a different mail-setup please read the MRBS manual.
+- Changing the line $vocab["norights"] in your own language file
 
    find:
    ```
@@ -70,7 +63,7 @@ Installation bridge
       ";
    ```
 
-9) Email settings must done in Joomla Global Configuration, for example with Gmail use:
+- Email settings must done in Joomla Global Configuration, for example with Gmail use:
 	
   ```
   Mailer = smtp
@@ -85,9 +78,8 @@ Installation bridge
   SMTP Host = smtp@gmail.com
   ```
 
-10) Edit the minimum group level in the config.inc.php file. Check in Joomla what the ID’s level numbers are. ../administrator/index.php?option=com_users&view=groups
-
-11) Put your own needs in config.inc.overrides.php file. When there are updates for the MRBS bridge you still have your own settings after updating.
+- Edit the minimum group level in the config.inc.php file. Check in Joomla what the ID’s level numbers are. ../administrator/index.php?option=com_users&view=groups
+- Put your own needs in config.inc.overrides.php file. When there are updates for the MRBS bridge you still have your own settings after updating.
 
 
 
