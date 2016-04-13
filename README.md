@@ -53,17 +53,21 @@ NOTE: This bridge can NOT be installed by using the installer from joomla, use F
 8) Changing the line $vocab["norights"] in your own language file
 
    find:
-   > $vocab["norights"] = "You do not have the necessary rights to view this page.";
+   ```
+   $vocab["norights"] = "You do not have the necessary rights to view this page.";
+   ```
 
    change to:
    
-   > $vocab["norights"] = "
-   > You are not authorized to modify this entry.
-   > <p class='login_reg'>
-   > <a class='login' href='../index.php?option=com_users&amp;view=login' TARGET='_parent' id='btnLogin'>Login</a> or
-   > <a class='registration' href='../index.php?option=com_users&amp;view=registration' TARGET='_parent' >Register</a>
-   > </p>
-   > ";
+   ```
+   $vocab["norights"] = "
+      You are not authorized to modify this entry.
+      <p class='login_reg'>
+      <a class='login' href='../index.php?option=com_users&amp;view=login' TARGET='_parent' id='btnLogin'>Login</a> or
+      <a class='registration' href='../index.php?option=com_users&amp;view=registration' TARGET='_parent' >Register</a>
+      </p>
+      ";
+   ```
 
 9) Email settings must done in Joomla Global Configuration
 	for example with Gmail use:
