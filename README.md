@@ -70,18 +70,19 @@ NOTE: This bridge can NOT be installed by using the installer from joomla, use F
    ```
 
 9) Email settings must done in Joomla Global Configuration
-	```
 	for example with Gmail use:
-		Mailer = smtp
-		From email = admin mail
-		From Name = you website name
-		Sendmail Path = /usr/sbin/sendmail
-		SMTP Authentication = Yes
-		SMTP Security = SSL
-		SMTP Port = 465
-		SMTP Username = name@gmail.com or name@company_name_gmal_apps.com
-		SMTP Password = ******
-		SMTP Host = smtp@gmail.com
+	
+	```
+	Mailer = smtp
+	From email = admin mail
+	From Name = you website name
+	Sendmail Path = /usr/sbin/sendmail
+	SMTP Authentication = Yes
+	SMTP Security = SSL
+	SMTP Port = 465
+	SMTP Username = name@gmail.com or name@company_name_gmal_apps.com
+	SMTP Password = ******
+	SMTP Host = smtp@gmail.com
 	```
 
 10) Edit the minimum group level in the config.inc.php file. Check in Joomla what the ID’s level numbers are. ../administrator/index.php?option=com_users&view=groups
