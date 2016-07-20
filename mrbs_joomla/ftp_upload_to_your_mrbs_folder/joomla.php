@@ -37,6 +37,7 @@ $db_database =	$mainframe->getCfg('db');		// Database name
 $db_login =		$mainframe->getCfg('user');		// User for database authentication
 $db_password =	$mainframe->getCfg('password');	// Password for database authentication
 $debug =		$mainframe->getCfg('debug');
+$timezoneSystem = $mainframe->getCfg('offset');
 
 //Site
 $mrbs_company =						$mainframe->getCfg('sitename');
@@ -61,7 +62,7 @@ $user =			JFactory::getUser();
 $usermail =		$user->get('email');
 $username =		$user->get('name');
 $userid =		$user->get('id');
-$timezone =		$user->getParam('timezone', 'UTC');
+$timezoneUser =	$user->getParam('timezone', FALSE);
 $usergids =		$user->get('groups');
 
 //User Additional Fields
@@ -84,6 +85,7 @@ $cli_language = $lang_prefix;
 if ( $lang_prefix == 'en') {$faqfilelang = ''; } else { $faqfilelang = '_' . $lang_prefix; }
 
 //Time
+if ($timezoneUser) {$timezone = $timezoneUser;} else {$timezone = $timezoneSystem;}
 date_default_timezone_set($timezone);
 
 /************************************************************
