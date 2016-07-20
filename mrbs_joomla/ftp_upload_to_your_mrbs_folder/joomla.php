@@ -131,8 +131,7 @@ if ($debug == 1) {
 	checkOld('./language.inc',$string);
 	checkOld('./functions_mail.inc',$string);
 
-// +---------------------------------------------------------+
-// File all necessary files
+// Check all necessary files
 
 	$string = "ocean12";
 	function checkFiles($file,$string) {
@@ -145,10 +144,29 @@ if ($debug == 1) {
 		        exit;
 		    }
 		}
+	    if (!file_exists($file) && $file != './config.inc.overrides.php') {
+	        echo "Please reinstall the bridge. Missing files: '$file'";
+	        echo $manual;
+	        exit;
+		}
+
 	}
 	checkFiles('./config.inc.php',$string);
-	checkFiles('./config.inc.overrides.ph_',$string);
+	checkFiles('./config.inc.overrides.ph_.php',$string);
 	checkFiles('./config.inc.overrides.php',$string);
+	checkFiles('./auth/auth_jm.inc',$string);
+	checkFiles('./session/session_jm.inc',$string);
+
+
+// +---------------------------------------------------------+
+// Check all necessary files
+
+	if (file_exists("config.inc.overrides.php.php")) {
+		echo "Your using the wrong name for the override file. <br/><br/> Please read the manual <br/><br/>";
+        echo $manual;
+        exit;
+	}
+
 
 // +---------------------------------------------------------+
 // Minimum requered
