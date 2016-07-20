@@ -91,7 +91,7 @@ date_default_timezone_set($timezone);
 /************************************************************
  * Some checks if the bridge can work.
  ************************************************************/
-$manual = "<br><br><br>TIP: <i>Check <a href='http://sourceforge.net/projects/joomlamrbs/' target='_blank'>Joomla MRBS Bridge website</a> for more information</i>";
+$manual = "<br><br><br>TIP: <i>Check <a href='https://github.com/Syndes/Joomla-MRBS-Bridge' target='_blank'>Joomla MRBS Bridge website</a> for more information</i>";
 
 if ($debug == 1) {
 	ini_set('display_errors', 1);
