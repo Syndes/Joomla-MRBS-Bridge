@@ -122,13 +122,6 @@ $is_private_field['entry.mail'] = TRUE;
 $is_private_field['entry.description'] = TRUE;
 $is_private_field['entry.create_by'] = TRUE;
 
-/***********************************************
- * Get Joomla defaults
- ***********************************************/
-$is_default_entry['entry.mail'] = $usermail;
-$is_default_entry['entry.contact'] = $username;
-$is_default_entry['entry.debnumber'] = $userid;
-
 // General settings
 $auth['only_admin_can_book'] = FALSE;
 $auth['only_admin_can_book_repeat'] = FALSE;
@@ -146,5 +139,9 @@ $bridge_version_number = '1.5.1';
 require ( 'joomla.php' );
 if (file_exists("config.inc.overrides.php")) {require ( 'config.inc.overrides.php' );}
 
-
-
+/***********************************************
+ * Get Joomla defaults
+ ***********************************************/
+$is_default_entry['entry.mail'] = $usermail;
+$is_default_entry['entry.contact'] = $username;
+$is_default_entry['entry.debnumber'] = $userid;
