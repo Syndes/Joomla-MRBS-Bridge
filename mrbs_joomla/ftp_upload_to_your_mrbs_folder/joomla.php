@@ -15,22 +15,29 @@
 // extra needs for Joomla mrbs_joomla_v1.5.1 ocean12 $
 //
 
+
+
+$dir = realpath(dirname(__FILE__).'/..' ); // path to your joomla installation directory
+
 //Joomla requirement
 define( '_JEXEC', 1 );
-//Find Joomla
-define( 'JPATH_BASE', realpath(dirname(__FILE__).'/..' )); /* now MRBS is in a subfolder from Joomla. Check the manual on http:// php. net/manual/en/function.realpath.php */
-//Joomla requirement - part 2
+define( 'JPATH_BASE', $dir);
 define( 'DS', DIRECTORY_SEPARATOR );
+
+require_once ( JPATH_BASE .DS . 'configuration.php' );
 require_once ( JPATH_BASE .DS.'includes'.DS.'defines.php' );
 require_once ( JPATH_BASE .DS.'includes'.DS.'framework.php' );
 require_once ( JPATH_BASE .DS.'libraries'.DS.'joomla'.DS.'factory.php' );
+
+//Then you can call the classes this way
+$mainframe = JFactory::getApplication('site');
+jimport('joomla.plugin.helper');
 
 //Mrbs authentication
 $auth["session"] =	"jm";
 $auth["type"] =		"jm";
 
 //Database
-$mainframe =	JFactory::getApplication('site');
 $dbsys =		$mainframe->getCfg('dbtype');	// Database driver name
 $db_host =		$mainframe->getCfg('host');		// Database host name
 $db_database =	$mainframe->getCfg('db');		// Database name
@@ -66,12 +73,14 @@ $timezoneUser =	$user->getParam('timezone', FALSE);
 $usergids =		$user->get('groups');
 
 //User Additional Fields
-$profile = 		JUserHelper::getProfile($user->id);
-$address1 =		$profile->profile['address1'];
-$address2 =		$profile->profile['address2'];
-$city =			$profile->profile['city'];
-$postal_code =	$profile->profile['postal_code'];
-$phone =		$profile->profile['phone'];
+if ($userid){
+	$profile = 		JUserHelper::getProfile($user->id);
+	$address1 =		$profile->profile['address1'];
+	$address2 =		$profile->profile['address2'];
+	$city =			$profile->profile['city'];
+	$postal_code =	$profile->profile['postal_code'];
+	$phone =		$profile->profile['phone'];
+}
 
 // Default language joomla
 $frontendsiteDefaultLanguage = JComponentHelper::getParams('com_languages')->get('site'); 
@@ -133,6 +142,7 @@ if ($debug == 1) {
 	checkOld('./language.inc',$string);
 	checkOld('./functions_mail.inc',$string);
 
+// +---------------------------------------------------------+
 // Check all necessary files
 
 	$string = "ocean12";
@@ -230,13 +240,6 @@ if ($debug == 1) {
 	checkLang('./lang/lang.en',$string);
 	checkLang('./lang/lang.' . $lang_prefix ,$string);
 	
-
-
-
-
-
-
-
 
 
 
