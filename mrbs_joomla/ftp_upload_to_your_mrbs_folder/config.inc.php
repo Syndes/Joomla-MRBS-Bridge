@@ -163,7 +163,13 @@ $vocab_override['nl']["norights"] = "
 	<a class='registration' href='../index.php?option=com_users&amp;view=registration' TARGET='_parent' >Register</a>
 	</p>
 	";
-
+$vocab_override['de']["norights"] = "
+	Sie haben keine Berechtigung, diesen Eintrag zu ändern.
+	<p class='login_reg'>
+	<a class='login' href='../index.php?option=com_users&amp;view=login' TARGET='_parent' id='btnLogin'>Login</a> or
+	<a class='registration' href='../index.php?option=com_users&amp;view=registration' TARGET='_parent' >Register</a>
+	</p>
+	";
 
 
 
