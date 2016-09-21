@@ -12,7 +12,7 @@
 // |                                                                           |
 // +---------------------------------------------------------------------------+
 //
-// extra needs for Joomla mrbs_joomla_v1.5.1 ocean12 $
+// extra needs for Joomla mrbs_joomla_v1.5.2 ocean12 $
 //
 
 
