@@ -223,23 +223,7 @@ if ($debug == 1) {
 			exit;
 		}
 
-// +---------------------------------------------------------+
-// Check if language file has been changed.
-	$string = "option=com_users";
-	function checkLang($file,$string) {
-		global $manual;
-	    if (file_exists($file)) {
-	    	$pos = strpos( file_get_contents($file) , $string);
-		    if (!$pos) {
-		        echo "Please update your language file. We are missing the login option in file: '$file'";
-		        echo $manual;
-		        exit;
-		    }
-		}
-	}
-	checkLang('./lang/lang.en',$string);
-	checkLang('./lang/lang.' . $lang_prefix ,$string);
-	
+
 
 
 
