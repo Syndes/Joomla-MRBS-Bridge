@@ -157,9 +157,9 @@ if ($debug == 1) {
 		    }
 		}
 	    if (!file_exists($file) && $file != './config.inc.overrides.php') {
-	        echo "Please reinstall the bridge. Missing files: '$file'";
-	        echo $manual;
-	        exit;
+	        // echo "Please reinstall the bridge. Missing files: '$file'";
+	        // echo $manual;
+	        // exit;
 		}
 
 	}
