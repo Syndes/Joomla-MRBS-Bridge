@@ -145,3 +145,25 @@ if (file_exists("config.inc.overrides.php")) {require ( 'config.inc.overrides.ph
 $is_default_entry['entry.mail'] = $usermail;
 $is_default_entry['entry.contact'] = $username;
 $is_default_entry['entry.debnumber'] = $userid;
+
+/***********************************************
+ * Set login language
+ ***********************************************/
+$vocab_override['en']["norights"] = "
+	You are not authorized to modify this entry.
+	<p class='login_reg'>
+	<a class='login' href='../index.php?option=com_users&amp;view=login' TARGET='_parent' id='btnLogin'>Login</a> or
+	<a class='registration' href='../index.php?option=com_users&amp;view=registration' TARGET='_parent' >Register</a>
+	</p>
+	";
+$vocab_override['nl']["norights"] = "
+	U heeft geen rechten om deze boeking aan te passen.
+	<p class='login_reg'>
+	<a class='login' href='../index.php?option=com_users&amp;view=login' TARGET='_parent' id='btnLogin'>Login</a> or
+	<a class='registration' href='../index.php?option=com_users&amp;view=registration' TARGET='_parent' >Register</a>
+	</p>
+	";
+
+
+
+
