@@ -3,6 +3,7 @@
 Bridge between Joomla and MRBS
 
  MRBS - http://mrbs.sourceforge.net
+ MRBS - https://sourceforge.net/p/mrbs/hg-code/ci/default/tree/web/
 
  Joomla - http://www.joomla.org
 
@@ -104,4 +105,10 @@ When this happens after uploading the bridge files you did it wrong, please do n
 > Warning: Server failed to set locale to ‘xx_XX.UTF-8']
 
 Search for override_locale settings to solve the problem
+
+> Ugly layout of MRBS
+
+Please try to download the most recent version on:
+https://sourceforge.net/p/mrbs/hg-code/ci/default/tree/web/
+
 
