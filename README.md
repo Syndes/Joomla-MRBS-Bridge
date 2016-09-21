@@ -3,6 +3,7 @@
 Bridge between Joomla and MRBS
 
  MRBS - http://mrbs.sourceforge.net
+ 
  MRBS - https://sourceforge.net/p/mrbs/hg-code/ci/default/tree/web/
 
  Joomla - http://www.joomla.org
@@ -29,16 +30,6 @@ PHP version 5.3.x
 Installation
 -------------------------
 
-- Upload MRBS
-- Please read the INSTALL file from MRBS (http://mrbs.sourceforge.net/docs.php)
-- When MRBS is working, follow our installation guide “readme.txt”.
-- Off course Joomla must also work properly first!
-
-
-
-Installation bridge
--------------------------
-
 **NOTE: This bridge can NOT be installed by using the installer from joomla, use FTP**
 
 - Install Joomla - test if Joomla is working correctly
@@ -46,7 +37,7 @@ Installation bridge
 - Install MRBS - test if MRBS is working correctly It must be a subfolder of your Joomla installation.
 - Is Joomla still working?
 - Try to make a booking in MRBS.
-- upload files from FTP_UPLOAD to the MRBS folder (merge and override current files)
+- Install the Joomla-MRBS-Bridge by uploading the files from the folder FTP_UPLOAD to the MRBS folder on your server (merge and override current files)
 - When you are using SMTP email in Joomla then the MRBS mail will also working. When you want to use a different mail-setup please read the MRBS manual.
 - Changing the line $vocab["norights"] in your own language file
 
